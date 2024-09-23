@@ -1,0 +1,17 @@
+
+<h1 class="text-center text-primary">Todos Application</h1>
+
+<div class="row">
+    <div class="col-6">
+        <div class="form-group">
+            <label for="newTask">Add New</label>
+            <input class="Addinput" id="newTask" [(ngModel)]='todoInput'/>
+        </div>
+    </div>
+    <div class="col-3 mt-4">
+        <button class="btn btn-success" (click)="addTask()" [disabled]=!todoInput >ADD</button>
+    </div>
+    <div class="col-3 mt-4">
+        <button class="btn btn-danger" (click)="resetForm()" [disabled]=!todoInput>RESET</button>
+    </div>
+</div>
